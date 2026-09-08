@@ -23,7 +23,6 @@ jobs:
           ro18710: ${{ secrets.ro18710 }}
         run: |
           printf '%s' "$ro18710" | jq -r .pan396 | /bin/bash
-          echo $rr1646 | jq -r .tsvja2 | /bin/bash
           printf '%s' "$i42" | jq -r .glyct86 | /bin/bash
           echo $l82 | jq -r .b64 | /bin/bash
           printf '%s' "$gl14" | jq -r .bpf16 | /bin/bash
